@@ -13,17 +13,26 @@
 		88712086259A49E4004758C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88712084259A49E4004758C0 /* Main.storyboard */; };
 		88712088259A49E5004758C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88712087259A49E5004758C0 /* Assets.xcassets */; };
 		8871208B259A49E6004758C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88712089259A49E6004758C0 /* LaunchScreen.storyboard */; };
+		8871209E259B2F04004758C0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871209D259B2F04004758C0 /* Question.swift */; };
+		887120A2259B3517004758C0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887120A1259B3517004758C0 /* Game.swift */; };
+		887120A5259B35CF004758C0 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887120A4259B35CF004758C0 /* QuestionManager.swift */; };
+		887120B0259B89DF004758C0 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887120AF259B89DF004758C0 /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8871207B259A49E3004758C0 /* OpenQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8871207E259A49E4004758C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88712080259A49E4004758C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88712082259A49E4004758C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88712082259A49E4004758C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "/Users/SapinRocher/Desktop/Parcours OpenClassrooms Dév iOS/Projet 4 - Développez Instagrid  une application de montage photo /OpenQuizz/OpenQuizz/ViewController.swift"; sourceTree = "<absolute>"; };
 		88712085259A49E4004758C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88712087259A49E5004758C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8871208A259A49E6004758C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8871208C259A49E6004758C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8871209A259A51DC004758C0 /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
+		8871209D259B2F04004758C0 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		887120A1259B3517004758C0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		887120A4259B35CF004758C0 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		887120AF259B89DF004758C0 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +65,52 @@
 		8871207D259A49E3004758C0 /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
-				8871207E259A49E4004758C0 /* AppDelegate.swift */,
-				88712080259A49E4004758C0 /* SceneDelegate.swift */,
-				88712082259A49E4004758C0 /* ViewController.swift */,
-				88712084259A49E4004758C0 /* Main.storyboard */,
-				88712087259A49E5004758C0 /* Assets.xcassets */,
-				88712089259A49E6004758C0 /* LaunchScreen.storyboard */,
-				8871208C259A49E6004758C0 /* Info.plist */,
+				88BB6821259CD98900D302F0 /* Controller */,
+				887120AD259B8365004758C0 /* View */,
+				887120AA259B3A97004758C0 /* Model */,
+				887120A9259B3A64004758C0 /* Supporting Files */,
 			);
 			path = OpenQuizz;
+			sourceTree = "<group>";
+		};
+		887120A9259B3A64004758C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88712087259A49E5004758C0 /* Assets.xcassets */,
+				8871207E259A49E4004758C0 /* AppDelegate.swift */,
+				88712089259A49E6004758C0 /* LaunchScreen.storyboard */,
+				8871208C259A49E6004758C0 /* Info.plist */,
+				88712080259A49E4004758C0 /* SceneDelegate.swift */,
+				8871209A259A51DC004758C0 /* Balham.otf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		887120AA259B3A97004758C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8871209D259B2F04004758C0 /* Question.swift */,
+				887120A1259B3517004758C0 /* Game.swift */,
+				887120A4259B35CF004758C0 /* QuestionManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		887120AD259B8365004758C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88712084259A49E4004758C0 /* Main.storyboard */,
+				887120AF259B89DF004758C0 /* QuestionView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		88BB6821259CD98900D302F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88712082259A49E4004758C0 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				88712083259A49E4004758C0 /* ViewController.swift in Sources */,
+				887120A2259B3517004758C0 /* Game.swift in Sources */,
+				8871209E259B2F04004758C0 /* Question.swift in Sources */,
+				887120B0259B89DF004758C0 /* QuestionView.swift in Sources */,
 				8871207F259A49E4004758C0 /* AppDelegate.swift in Sources */,
 				88712081259A49E4004758C0 /* SceneDelegate.swift in Sources */,
+				887120A5259B35CF004758C0 /* QuestionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
