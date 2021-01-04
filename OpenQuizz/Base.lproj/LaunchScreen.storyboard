@@ -15,13 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="O9g-eb-nb0">
-                                <rect key="frame" x="87" y="303" width="241" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="O9g-eb-nb0">
+                                <rect key="frame" x="86.5" y="303" width="241" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O9g-eb-nb0" secondAttribute="height" multiplier="241:290" id="EQC-ds-x6d"/>
+                                    <constraint firstAttribute="width" constant="241" id="tLN-js-woz"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.34214308859999998" green="0.41742855309999999" blue="0.50966817139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O9g-eb-nb0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PY4-r0-roI"/>
+                            <constraint firstItem="O9g-eb-nb0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="y3e-ba-VS6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
